@@ -17,14 +17,7 @@ def compute(ogSource, masterList):
 	repTime = []
 	recvReqTime = []
 	sendRepTime = []
-	#ogSource = '' #TBD May become hard-coded in the future to accurately get statistics for nodes
-	getOG = False #Would be removed if ogSource becomes hard-coded
 	for entry in masterList:
-		if getOG == True:
-			ogSource = entry[2]
-			print("Source identified as: " + ogSource)
-			getOG = False
-
 		if 'request' in entry:
 			if entry[2] == ogSource:
 				reqTime.append([entry[0], entry[-1].strip(')'), entry[1]])
