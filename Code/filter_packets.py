@@ -8,7 +8,7 @@ def filter(filename):
 	f = open(filename, 'r')
 	line = f.readline().strip()
 
-	newfn = filename.strip(".txt")  + "_filtered" 
+	newfn = filename.strip(".txt")  + "_filtered.txt" 
 
 	fw = open(newfn, 'w')
 
@@ -21,4 +21,4 @@ def filter(filename):
 
 #test script
 
-filter("example.txt")
+filter("Capture/Node1.txt")
