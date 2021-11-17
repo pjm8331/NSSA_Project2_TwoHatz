@@ -18,7 +18,3 @@ def filter(filename):
 
 	f.close()
 	fw.close()
-
-#test script
-
-filter("Capture/Node1.txt")
