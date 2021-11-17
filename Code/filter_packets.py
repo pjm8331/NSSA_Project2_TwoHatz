@@ -13,7 +13,7 @@ def filter(filename):
 	fw = open(newfn, 'w')
 
 	for line in f.readlines():
-		if "ICMP" in line:
+		if "ICMP" and "Echo" in line:
 			fw.write(line)
 
 	f.close()
