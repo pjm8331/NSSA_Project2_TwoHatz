@@ -42,7 +42,7 @@ node4_data = compute("192.168.200.2", node4_parsed)
 
 # call filter parser
 
-f = open("project2_output.txt", "w")
+f = open("project2_output.csv", "w")
 
 f.write("Node 1 \n")
 f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received")
