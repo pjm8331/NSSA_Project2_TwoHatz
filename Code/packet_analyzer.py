@@ -7,34 +7,34 @@ from packet_parser import *
 
 
 #Node 1
-filter("name_of_file")
+filter("Captures/Node1.txt")
 #Node 2
-filter("name_of_file")
+filter("Captures/Node2.txt")
 #Node 3
-filter("name_of_file")
+filter("Captures/Node3.txt")
 #Node 4
-filter("name_of_file")
+filter("Captures/Node4.txt")
 
 #Node 1
-node1_parsed = parse("node1_filtered")
+node1_parsed = parse("Captures/Node1_filtered.txt")
 #Node 2
-node2_parsed = parse("node1_filtered")
+node2_parsed = parse("Captures/Node2_filtered.txt")
 #Node 3
-node3_parsed = parse("node1_filtered")
+node3_parsed = parse("Captures/Node3_filtered.txt")
 #Node 4
-node4_parsed = parse("node1_filtered")
+node4_parsed = parse("Captures/Node4_filtered.txt")
 
 
 
 
 #Node 1
-node1_data = foo("192.168.100.1", node1_parsed)
+node1_data = compute("192.168.100.1", node1_parsed)
 #Node 2
-node2_data = foo("192.168.100.2", node2_parsed)
+node2_data = compute("192.168.100.2", node2_parsed)
 #Node 3
-node3_data = foo("192.168.200.1", node3_parsed)
+node3_data = compute("192.168.200.1", node3_parsed)
 #Node 4
-node4_data = foo("192.168.200.2", node4_parsed)
+node4_data = compute("192.168.200.2", node4_parsed)
 
 
 
