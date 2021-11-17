@@ -46,7 +46,7 @@ f = open("project2_output.txt", "w")
 
 f.write("Node 1 \n")
 f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received")
-f.write(str(node1_data[0])) + "\t" + str(node1_data[1])) + "\t" + str(node1_data[2]) + str(node1_data[3]) +"\n")
+f.write(str(node1_data[0]) + "\t" + str(node1_data[1]) + "\t" + str(node1_data[2]) + str(node1_data[3]) +"\n")
 f.write("Echo Request Bytes Sent (bytes)/tEcho Request Data Sent (bytes)")
 f.write(str(node1_data[4]) + "\t" + str(node1_data[5]) + "\n")
 
