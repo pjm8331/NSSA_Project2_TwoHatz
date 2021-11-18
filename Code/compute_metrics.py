@@ -49,8 +49,6 @@ def compute(ogSource, masterList):
 	eput = ((totReqBytesSent / sumRTT) / 1000)
 	gput = ((totReqDataSent / sumRTT) / 1000)
 	avgEchoHop = sum(ttlList)/len(ttlList)
-	print(sum(ttlList))
-	print(len(ttlList))
 	return [totReqSent, totReqRecv, totRepSent, totRepRecv, totReqBytesSent, totReqDataSent, totReqBytesRecv, totReqDataRecv, avgRTT, eput, gput, avgReplyDelay, avgEchoHop]
 
 def getAverageRTT(reqTime,repTime):
