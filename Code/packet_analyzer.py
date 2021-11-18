@@ -7,15 +7,18 @@ from packet_parser import *
 
 # Run filter on each node:
 
-#Node 1
-filter("Captures/Node1.txt")
-#Node 2
-filter("Captures/Node2.txt")
-#Node 3
-filter("Captures/Node3.txt")
-#Node 4
-filter("Captures/Node4.txt")
-
+try:
+    #Node 1
+    filter("Captures/Node1.txt")
+    #Node 2
+    filter("Captures/Node2.txt")
+    #Node 3
+    filter("Captures/Node3.txt")
+    #Node 4
+    filter("Captures/Node4.txt")
+except FileNotFoundError:
+    print("Usage: python3 Code/packet_analyzer.py")
+    exit()
 # Run parse on each filtered node:
 
 #Node 1
