@@ -47,7 +47,7 @@ node4_data = compute("192.168.200.2", node4_parsed)
 
 f = open("project2_output.csv", "w")
 
-f.write("Node 1")
+f.write("Node 1 \n")
 f.write("\nEcho Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
 f.write(str(round(node1_data[0], 2)) +"," + str(round(node1_data[1], 2)) + "," + str(round(node1_data[2], 2)) + "," + str(round(node1_data[3], 2)) + "\n")
 f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)\n")
