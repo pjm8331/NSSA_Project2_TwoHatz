@@ -48,63 +48,63 @@ node4_data = compute("192.168.200.2", node4_parsed)
 f = open("project2_output.csv", "w")
 
 f.write("Node 1 \n")
-f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received")
+f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received\n")
 f.write(str(node1_data[0]) + "\t" + str(node1_data[1]) + "\t" + str(node1_data[2]) + str(node1_data[3]) +"\n")
 f.write("Echo Request Bytes Sent (bytes)/tEcho Request Data Sent (bytes)")
 f.write(str(node1_data[4]) + "\t" + str(node1_data[5]) + "\n")
 
-f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)")
+f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)\n")
 f.write(str(node1_data[6]) + "\t" + str(node1_data[7]) + "\n")
 f.write("\nAverage RTT (miliseconds) " + str(node1_data[8]))
-f.write("Echo Request Throughput (kB/sec) " + str(node1_data[9]))#input num here
-f.write("Echo Request Goodput (kB/sec) " + str(node1_data[10]))#input num here
-f.write("Average Reply Delay (microseconds) " + str(node1_data[11]))#input num here
-f.write("Average Echo Request Hop Count " + str(node1_data[12]))#input num here
+f.write("\nEcho Request Throughput (kB/sec) " + str(node1_data[9]))#input num here
+f.write("\nEcho Request Goodput (kB/sec) " + str(node1_data[10]))#input num here
+f.write("\nAverage Reply Delay (microseconds) " + str(node1_data[11]))#input num here
+f.write("\nAverage Echo Request Hop Count " + str(node1_data[12]))#input num here
 f.write("\n")
 
 f.write("Node 2\n")
-f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received")
+f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received\n")
 f.write(str(node2_data[0]) + "\t" + str(node2_data[1]) + "\t" + str(node2_data[2]) + str(node2_data[3]) +"\n")
 f.write("Echo Request Bytes Sent (bytes)/tEcho Request Data Sent (bytes)")
 f.write(str(node2_data[4]) + "\t" + str(node2_data[5]) + "\n")
 
-f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)")
+f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)\n")
 f.write(str(node2_data[6]) + "\t" + str(node2_data[7]) + "\n")
 f.write("\nAverage RTT (miliseconds) " + str(node2_data[8]))
-f.write("Echo Request Throughput (kB/sec) " + str(node2_data[9]))#input num here
-f.write("Echo Request Goodput (kB/sec) " + str(node2_data[10]))#input num here
-f.write("Average Reply Delay (microseconds) " + str(node2_data[11]))#input num here
-f.write("Average Echo Request Hop Count " + str(node2_data[12]))#input num here
+f.write("\nEcho Request Throughput (kB/sec) " + str(node2_data[9]))#input num here
+f.write("\nEcho Request Goodput (kB/sec) " + str(node2_data[10]))#input num here
+f.write("\nAverage Reply Delay (microseconds) " + str(node2_data[11]))#input num here
+f.write("\nAverage Echo Request Hop Count " + str(node2_data[12]))#input num here
 f.write("\n")
 
 f.write("Node 3\n")
-f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received")
+f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received\n")
 f.write(str(node3_data[0]) + "\t" + str(node3_data[1]) + "\t" + str(node3_data[2]) + str(node3_data[3]) +"\n")
 f.write("Echo Request Bytes Sent (bytes)/tEcho Request Data Sent (bytes)")
 f.write(str(node3_data[4]) + "\t" + str(node3_data[5]) + "\n")
 
-f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)")
+f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)\n")
 f.write(str(node3_data[6]) + "\t" + str(node3_data[7]) + "\n")
 f.write("\nAverage RTT (miliseconds) " + str(node3_data[8]))
-f.write("Echo Request Throughput (kB/sec) " + str(node3_data[9]))#input num here
-f.write("Echo Request Goodput (kB/sec) " + str(node3_data[10]))#input num here
-f.write("Average Reply Delay (microseconds) " + str(node3_data[11]))#input num here
-f.write("Average Echo Request Hop Count " + str(node3_data[12]))#input num here
+f.write("\nEcho Request Throughput (kB/sec) " + str(node3_data[9]))#input num here
+f.write("\nEcho Request Goodput (kB/sec) " + str(node3_data[10]))#input num here
+f.write("\nAverage Reply Delay (microseconds) " + str(node3_data[11]))#input num here
+f.write("\nAverage Echo Request Hop Count " + str(node3_data[12]))#input num here
 f.write("\n")
 
 f.write("Node 4\n")
-f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received")
+f.write("Echo Requests Sent\tEcho Requests Received\tEcho Replies Sent\tEcho Replies Received\n")
 f.write(str(node4_data[0]) + "\t" + str(node4_data[1]) + "\t" + str(node4_data[2]) + str(node4_data[3]) +"\n")
 f.write("Echo Request Bytes Sent (bytes)/tEcho Request Data Sent (bytes)")
 f.write(str(node4_data[4]) + "\t" + str(node4_data[5]) + "\n")
 
-f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)")
+f.write("Echo Request Bytes Received (bytes)/tEcho Request Data Received (bytes)\n")
 f.write(str(node4_data[6]) + "\t" + str(node4_data[7]) + "\n")
 f.write("\nAverage RTT (miliseconds) " + str(node4_data[8]))
-f.write("Echo Request Throughput (kB/sec) " + str(node4_data[9]))#input num here
-f.write("Echo Request Goodput (kB/sec) " + str(node4_data[10]))#input num here
-f.write("Average Reply Delay (microseconds) " + str(node4_data[11]))#input num here
-f.write("Average Echo Request Hop Count " + str(node4_data[12]))#input num here
+f.write("\nEcho Request Throughput (kB/sec) " + str(node4_data[9]))#input num here
+f.write("\nEcho Request Goodput (kB/sec) " + str(node4_data[10]))#input num here
+f.write("\nAverage Reply Delay (microseconds) " + str(node4_data[11]))#input num here
+f.write("\nAverage Echo Request Hop Count " + str(node4_data[12]))#input num here
 f.write("\n")
 
 f.close()
