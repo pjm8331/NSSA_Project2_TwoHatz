@@ -5,6 +5,7 @@ from packet_parser import *
 #Peter Mastropaolo (pjm8331)
 #Joshua Kelly (jmk3378)
 
+# Run filter on each node:
 
 #Node 1
 filter("Captures/Node1.txt")
@@ -14,6 +15,8 @@ filter("Captures/Node2.txt")
 filter("Captures/Node3.txt")
 #Node 4
 filter("Captures/Node4.txt")
+
+# Run parse on each filtered node:
 
 #Node 1
 node1_parsed = parse("Captures/Node1_filtered.txt")
@@ -25,7 +28,7 @@ node3_parsed = parse("Captures/Node3_filtered.txt")
 node4_parsed = parse("Captures/Node4_filtered.txt")
 
 
-
+# Run compute on for each node_parsed:
 
 #Node 1
 node1_data = compute("192.168.100.1", node1_parsed)
@@ -40,7 +43,7 @@ node4_data = compute("192.168.200.2", node4_parsed)
 
 #Expected Return from compute is a list = [totReqSent, totReqRecv, totRepSent, totRepRecv, totReqBytesSent, totReqDataSent, totReqBytesRecv, totReqDataRecv, avgRTT, eput, gput, avgReplyDelay, avgEchoHop])
 
-# call filter parser
+# Write node data to output file inlcuding every node:
 
 f = open("project2_output.csv", "w")
 
