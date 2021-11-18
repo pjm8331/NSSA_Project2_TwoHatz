@@ -61,10 +61,10 @@ f.write("\nEcho Request Goodput (kB/sec)" + "," + str(round(node1_data[10], 2)))
 f.write("\nAverage Reply Delay (microseconds)" + "," + str(round(node1_data[11], 2)))#input num here
 f.write("\nAverage Echo Request Hop Count" + "," + str(round(node1_data[12], 2)) + "\n")#input num here
 
-f.write("Node 2\n")
-f.write("Echo Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
+f.write("\n Node 2\n")
+f.write("\nEcho Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
 f.write(str(round(node2_data[0], 2)) +"," + str(round(node2_data[1], 2)) + "," + str(round(node2_data[2], 2)) + "," + str(round(node2_data[3], 2)) + "\n")
-f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)")
+f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)\n")
 f.write(str(round(node2_data[4], 2)) + "," + str(round(node2_data[5], 2)) + "\n")
 
 f.write("Echo Request Bytes Received (bytes), Echo Request Data Received (bytes)\n")
@@ -73,13 +73,12 @@ f.write("\nAverage RTT (miliseconds)" + "," + str(round(node2_data[8], 2)))
 f.write("\nEcho Request Throughput (kB/sec)" + "," + str(round(node2_data[9], 2)))#input num here
 f.write("\nEcho Request Goodput (kB/sec)" + "," + str(round(node2_data[10], 2)))#input num here
 f.write("\nAverage Reply Delay (microseconds)" + "," + str(round(node2_data[11], 2)))#input num here
-f.write("\nAverage Echo Request Hop Count" + "," + str(round(node2_data[12], 2)))#input num here
-f.write("\n")
+f.write("\nAverage Echo Request Hop Count" + "," + str(round(node2_data[12], 2)) + "\n")#input num here
 
-f.write("Node 3\n")
-f.write("Echo Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
+f.write("\n Node 3\n")
+f.write("\nEcho Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
 f.write(str(round(node3_data[0], 2)) +"," + str(round(node3_data[1], 2)) + "," + str(round(node3_data[2], 2)) + "," + str(round(node3_data[3], 2)) + "\n")
-f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)")
+f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)\n")
 f.write(str(round(node3_data[4], 2)) + "," + str(round(node3_data[5], 2)) + "\n")
 
 f.write("Echo Request Bytes Received (bytes), Echo Request Data Received (bytes)\n")
@@ -88,13 +87,12 @@ f.write("\nAverage RTT (miliseconds)" + "," + str(round(node3_data[8], 2)))
 f.write("\nEcho Request Throughput (kB/sec)" + "," + str(round(node3_data[9], 2)))#input num here
 f.write("\nEcho Request Goodput (kB/sec)" + "," + str(round(node3_data[10], 2)))#input num here
 f.write("\nAverage Reply Delay (microseconds)" + "," + str(round(node3_data[11], 2)))#input num here
-f.write("\nAverage Echo Request Hop Count" + "," + str(round(node3_data[12], 2)))#input num here
-f.write("\n")
+f.write("\nAverage Echo Request Hop Count" + "," + str(round(node3_data[12], 2)) + "\n")#input num here
 
-f.write("Node 4\n")
-f.write("Echo Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
+f.write("\n Node 4\n")
+f.write("\nEcho Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
 f.write(str(round(node4_data[0], 2)) +"," + str(round(node4_data[1], 2)) + "," + str(round(node4_data[2], 2)) + "," + str(round(node4_data[3], 2)) + "\n")
-f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)")
+f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)\n")
 f.write(str(round(node4_data[4], 2)) + "," + str(round(node4_data[5], 2)) + "\n")
 
 f.write("Echo Request Bytes Received (bytes), Echo Request Data Received (bytes)\n")
@@ -103,7 +101,6 @@ f.write("\nAverage RTT (miliseconds)" + "," + str(round(node4_data[8], 2)))
 f.write("\nEcho Request Throughput (kB/sec)" + "," + str(round(node4_data[9], 2)))#input num here
 f.write("\nEcho Request Goodput (kB/sec)" + "," + str(round(node4_data[10], 2)))#input num here
 f.write("\nAverage Reply Delay (microseconds)" + "," + str(round(node4_data[11], 2)))#input num here
-f.write("\nAverage Echo Request Hop Count" + "," + str(round(node4_data[12], 2)))#input num here
-f.write("\n")
+f.write("\nAverage Echo Request Hop Count" + "," + str(round(node4_data[12], 2)) + "\n")#input num here
 
 f.close()
