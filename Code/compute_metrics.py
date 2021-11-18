@@ -13,7 +13,7 @@ def compute(ogSource, masterList):
 	gput = 0
 	avgReplyDelay = 0
 	avgEchoHop = 0
-
+	ttlList = []
 	reqTime = []
 	repTime = []
 	recvReqTime = []
@@ -36,6 +36,8 @@ def compute(ogSource, masterList):
 				totRepSent+=1
 				sendRepTime.append([entry[0], entry[1]])
 			elif entry[3] == ogSource:
+				tempttl = int(entry[-4].strip('ttl='))
+				ttlList.append(129-tempttl)
 				repTime.append([entry[0], entry[1]])
 				totRepRecv+=1
 
@@ -46,6 +48,9 @@ def compute(ogSource, masterList):
 	avgReplyDelay = getAverageReplyDelay(recvReqTime, sendRepTime)
 	eput = ((totReqBytesSent / sumRTT) / 1000)
 	gput = ((totReqDataSent / sumRTT) / 1000)
+	avgEchoHop = sum(ttlList)/len(ttlList)
+	print(sum(ttlList))
+	print(len(ttlList))
 	return [totReqSent, totReqRecv, totRepSent, totRepRecv, totReqBytesSent, totReqDataSent, totReqBytesRecv, totReqDataRecv, avgRTT, eput, gput, avgReplyDelay, avgEchoHop]
 
 def getAverageRTT(reqTime,repTime):
@@ -75,8 +80,4 @@ def getAverageReplyDelay(reqTime,repTime):
 				avgList.append(float(z[1])-time)
 				break
 	avg = ((sum(avgList) / len(avgList))*1000000)
-	return avg
-
-def getAverageEchoHopCount():
-	avg = 0
 	return avg
