@@ -47,10 +47,10 @@ node4_data = compute("192.168.200.2", node4_parsed)
 
 f = open("project2_output.csv", "w")
 
-f.write("Node 1 \n")
-f.write("Echo Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
+f.write("Node 1")
+f.write("\nEcho Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
 f.write(str(round(node1_data[0], 2)) +"," + str(round(node1_data[1], 2)) + "," + str(round(node1_data[2], 2)) + "," + str(round(node1_data[3], 2)) + "\n")
-f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)")
+f.write("Echo Request Bytes Sent (bytes), Echo Request Data Sent (bytes)\n")
 f.write(str(round(node1_data[4], 2)) + "," + str(round(node1_data[5], 2)) + "\n")
 
 f.write("Echo Request Bytes Received (bytes), Echo Request Data Received (bytes)\n")
@@ -59,8 +59,7 @@ f.write("\nAverage RTT (miliseconds)" + "," + str(round(node1_data[8], 2)))
 f.write("\nEcho Request Throughput (kB/sec)" + "," + str(round(node1_data[9], 2)))#input num here
 f.write("\nEcho Request Goodput (kB/sec)" + "," + str(round(node1_data[10], 2)))#input num here
 f.write("\nAverage Reply Delay (microseconds)" + "," + str(round(node1_data[11], 2)))#input num here
-f.write("\nAverage Echo Request Hop Count" + "," + str(round(node1_data[12], 2)))#input num here
-f.write("\n")
+f.write("\nAverage Echo Request Hop Count" + "," + str(round(node1_data[12], 2)) + "\n")#input num here
 
 f.write("Node 2\n")
 f.write("Echo Requests Sent, Echo Requests Received, Echo Replies Sent, Echo Replies Received\n")
