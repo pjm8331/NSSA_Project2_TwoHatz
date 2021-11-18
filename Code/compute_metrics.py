@@ -1,3 +1,4 @@
+#Peter Mastropaolo (pjm8331)
 def compute(ogSource, masterList):
 	totReqSent = 0
 	totReqRecv = 0
@@ -43,8 +44,8 @@ def compute(ogSource, masterList):
 			print(str(entry))
 	avgRTT, sumRTT = getAverageRTT(reqTime, repTime)
 	avgReplyDelay = getAverageReplyDelay(recvReqTime, sendRepTime)
-	eput = ((totReqBytesSent / sumRTT) / 100)
-	gput = ((totReqDataSent / sumRTT) / 100)
+	eput = ((totReqBytesSent / sumRTT) / 1000)
+	gput = ((totReqDataSent / sumRTT) / 1000)
 	return [totReqSent, totReqRecv, totRepSent, totRepRecv, totReqBytesSent, totReqDataSent, totReqBytesRecv, totReqDataRecv, avgRTT, eput, gput, avgReplyDelay, avgEchoHop]
 
 def getAverageRTT(reqTime,repTime):
